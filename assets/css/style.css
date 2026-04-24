@@ -88,9 +88,9 @@ main {
 }
 
 .katex-display {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
+  /* background: var(--surface); */
+  /* border: 1px solid var(--border); */
+  /* border-radius: 12px; */
 
   overflow-x: auto;
   overflow-y: hidden;
@@ -101,25 +101,26 @@ main {
   margin: 1.5em 0;
 }
 
-.katex-display .katex {
-  display: inline-flex;
-  align-items: baseline;
-  min-width: max-content;
+.katex-display > .katex {
+  display: block;
+  /* align-items: baseline; */
+  max-width: max-content;
   white-space: nowrap;
 }
 
 .katex-display .katex-html {
-  display: inline-flex;
-  align-items: baseline;
-  max-width: none;
+  display: inline-block;
+  /* align-items: baseline; */
+  /* max-width: none; */
   white-space: nowrap;
 }
 
 .katex-display .tag {
-  position: static !important;
+  display: inline-block;
+  /* position: static !important; */
   margin-left: 1.5rem;
   /* color: var(--subtle); */
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   white-space: nowrap;
 }
 
@@ -150,12 +151,18 @@ p .katex {
     font-size: 1rem;
   }
 
-  .katex {
+  /* .katex {
     font-size: 0.95em;
-  }
+  } */
 
-  .katex-display {
-    padding: 0.8rem;
+  .katex-display > .katex{
+    display: block;
+    /* padding: 0.8rem; */
+  }
+  .katex-display .tag {
+    display: block;
+    text-align: right;
+    margin-top: 0.3rem;
   }
 }
 
