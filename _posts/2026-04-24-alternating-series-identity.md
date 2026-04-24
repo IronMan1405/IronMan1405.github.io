@@ -96,9 +96,9 @@ $$
 $$
 
 Subtracting the series
-$$
+$
 \sum_{k=1}^{\infty}\frac{1}{1-a^{4k}}
-$$
+$
 from the right-hand side of (3), and aligning indices, we obtain:
 
 $$
