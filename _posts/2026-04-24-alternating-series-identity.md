@@ -14,8 +14,6 @@ $$
 \sum_{k=1}^{\infty}\frac{1}{a^{2k}+1}
 $$
 
-<br>
-
 ## Intuition
 
 At first glance, the left-hand side is an **alternating series**, while the right-hand side is strictly positive.  
@@ -25,8 +23,6 @@ The strategy is to:
 - decompose sums into even and odd components,
 - rewrite them in comparable forms,
 - and carefully transform one into the other.
-
-<br>
 
 ### Decomposing the Series
 
@@ -41,8 +37,6 @@ $$
 &= \frac{1}{1+a^3} + \frac{1}{1+a^5} + \frac{1}{1+a^7} + \cdots
 \end{aligned}
 $$
-
-<br>
 
 ### Combining into a Unified Expression
 
@@ -62,8 +56,6 @@ $$
 \tag{1}
 $$
 
-<br>
-
 ### Constructing a Parallel Form
 
 Similarly, consider:
@@ -81,8 +73,6 @@ $$
 \right)
 \tag{2}
 $$
-
-<br>
 
 ### Key Transformation
 
@@ -121,8 +111,6 @@ $$
 \tag{4}
 $$
 
-<br>
-
 ### Bringing Everything Together
 
 Finally considering the left-hand side of our required proof, and grouping consecutive terms we rewrite: 
@@ -153,8 +141,6 @@ $$
 \sum_{k=1}^{\infty}\frac{1}{a^{2k}+1}
 $$
 
-<br>
-
 ### Final Result
 
 $$
@@ -164,8 +150,6 @@ $$
 \sum_{k=1}^{\infty}\frac{1}{a^{2k}+1}
 }
 $$
-
-<br>
 
 ## Remarks
 
