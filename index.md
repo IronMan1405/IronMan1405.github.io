@@ -20,7 +20,7 @@ Not your typical polymath ;)
         {{ project.date | date: "%b %Y" }}
     {% endfor %}
 {% else %}
-    _No projects yet. Coming soon._
+*No projects yet. Coming soon.*
 {% endif %}
 
 ---
