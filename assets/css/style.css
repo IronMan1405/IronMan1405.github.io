@@ -98,29 +98,24 @@ main {
 
   padding: 1rem;
   margin: 1.5em 0;
-
-  position: relative;
 }
 
-.katex-display > .katex {
-  display: block;
+.katex-display .katex {
+  display: inline-block;
+  min-width: max-content;
+  white-space: nowrap;
+}
+
+.katex-display .katex-html {
+  display: inline-block;
   max-width: none;
   white-space: nowrap;
 }
 
-.katex-display > .katex > .katex-html {
-  display: inline-block;
-  width: max-content;
-  max-width: none;
-}
-
-.katex-display > .katex > .katex-html > .tag {
-  position: static;
-  display: block;
-  text-align: right;
-  padding-top: 0.35em;
+.katex-display .tag {
+  margin-left: 1rem;
   color: var(--subtle);
-  font-size: 0.9em;
+  white-space: nowrap;
 }
 
 p .katex {
