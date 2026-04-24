@@ -87,3 +87,12 @@ h3 {
 p {
   margin-bottom: 1.2em;
 }
+
+.nav {
+  margin-top: 10px;
+}
+
+.nav a {
+  margin-right: 15px;
+  color: var(--accent2);
+}

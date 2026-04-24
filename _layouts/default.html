@@ -22,6 +22,11 @@
             <h1 class="site-title">Monodeck</h1>
             <p class="site-subtitle">Math • Systems • Ideas</p>
         </div>
+        <nav class="nav">
+            {% for item in site.data.navigation %}
+                <a href="{{ item.url }}">{{ item.title }}</a>
+            {% endfor %}
+        </nav>
     </header>
 
     <main class="container">
