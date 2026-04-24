@@ -104,6 +104,12 @@ main {
 
 .katex-display > .katex {
   display: block;
+  max-width: none;
+  white-space: nowrap;
+}
+
+.katex-display > .katex > .katex-html {
+  display: inline-block;
   width: max-content;
   max-width: none;
 }
