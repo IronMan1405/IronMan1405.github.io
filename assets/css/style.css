@@ -109,7 +109,7 @@ main {
 
 .katex-display .katex {
   display: inline-block;
-  min-width: max-content;
+  min-width: fit-content;
 }
 
 .katex {
