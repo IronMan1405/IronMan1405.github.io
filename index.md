@@ -5,15 +5,19 @@ Not your typical polymath ;)
 
 ---
 
-## Projects
+{% assign projects = site.projects | default: empty | sort: "date" | reverse %}
 
-{% assign projects = site.projects | sort: "date" | reverse %}
+{% if projects.size > 0 %}
+## Projects
 
 {% for project in projects limit:3 %}
 ### [{{ project.title }}]({{ project.url }})
 {{ project.date | date: "%b %Y" }}
 
 {% endfor %}
+{% else %}
+_No projects yet. Coming soon._
+{% endif %}
 
 ---
 
