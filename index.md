@@ -7,20 +7,20 @@ Not your typical polymath ;)
 {% assign raw_projects = site.projects %}
 
 {% if raw_projects %}
-  {% assign projects = raw_projects | sort: "date" | reverse %}
+    {% assign projects = raw_projects | sort: "date" | reverse %}
 {% else %}
-  {% assign projects = "" | split: "" %}
+    {% assign projects = "" | split: "" %}
 {% endif %}
 
 ## Projects
 
-{% for project in projects limit:3 %}
-### [{{ project.title }}]({{ project.url }})
-{{ project.date | date: "%b %Y" }}
-
-{% endfor %}
+{% if projects.size > 0 %}
+    {% for project in projects limit:3 %}
+        ### [{{ project.title }}]({{ project.url }})
+        {{ project.date | date: "%b %Y" }}
+    {% endfor %}
 {% else %}
-_No projects yet. Coming soon._
+    _No projects yet. Coming soon._
 {% endif %}
 
 ---
