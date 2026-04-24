@@ -5,7 +5,7 @@ Not your typical polymath ;)
 
 ---
 
-{% assign projects = site.projects | default: empty | sort: "date" | reverse %}
+{% assign projects = site.projects | default: "" | sort: "date" | reverse %}
 
 {% if projects.size > 0 %}
 ## Projects
