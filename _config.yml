@@ -1,2 +1,6 @@
 title: Dakshesh
 description: Robotics | Embedded Systems | Engineering | Advanced Mathematics
+markdown: kramdown
+kramdown:
+  math_engine: katex
+  input: GFM
