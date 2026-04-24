@@ -1,0 +1,89 @@
+:root {
+  --bg: #232136;
+  --surface: #2a273f;
+  --text: #e0def4;
+  --subtle: #908caa;
+
+  --accent: #c4a7e7;
+  --accent2: #9ccfd8;
+  --highlight: #ebbcba;
+
+  --border: #393552;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  color: var(--accent);
+}
+
+a {
+  color: var(--accent2);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.katex-display {
+  background: var(--surface);
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.eq {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5em 0;
+}
+
+.eq span {
+  color: var(--subtle);
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2em;
+  padding-top: 1.5em;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.site-subtitle {
+  margin: 0;
+  color: var(--subtle);
+  font-size: 0.9rem;
+}
+
+main {
+  padding-bottom: 40px;
+}
+
+h2 {
+  margin-top: 2em;
+}
+
+h3 {
+  margin-top: 1.5em;
+}
+
+p {
+  margin-bottom: 1.2em;
+}
