@@ -93,9 +93,9 @@ main {
   border-radius: 12px;
 
   overflow-x: auto;
-  /* overflow-y: hidden;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 
   padding: 1rem;
   margin: 1.5em 0;
