@@ -92,24 +92,38 @@ main {
   border: 1px solid var(--border);
   border-radius: 12px;
 
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+
   padding: 1rem;
   margin: 1.5em 0;
 
-  overflow-x: auto;
-  overflow-y: hidden;
-
-  -webkit-overflow-scrolling: touch;
+  position: relative;
 }
 
-.katex-display {
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
+.katex-display > .katex {
+  display: block;
+  width: max-content;
+  max-width: none;
 }
 
-.katex-display .katex {
+.katex-display > .katex > .katex-html > .tag {
+  position: static;
+  display: block;
+  text-align: right;
+  padding-top: 0.35em;
+  color: var(--subtle);
+  font-size: 0.9em;
+}
+
+p .katex {
   display: inline-block;
-  min-width: fit-content;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  vertical-align: middle;
+  -webkit-overflow-scrolling: touch;
 }
 
 .katex {
@@ -136,6 +150,7 @@ main {
 
   .katex-display {
     padding: 0.8rem;
+    padding-bottom: 0.6rem;
   }
 
   .eq {
@@ -145,19 +160,6 @@ main {
 
   .eq span {
     align-self: flex-end;
-  }
-
-  p .katex {
-    display: inline-block;
-    max-width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    vertical-align: middle;
-  }
-
-  .katex-display,
-  p .katex {
-    min-width: max-content;
   }
 }
 
@@ -173,5 +175,6 @@ main {
 
   .katex-display {
     padding: 0.7rem;
+    border-radius: 8px;
   }
 }
