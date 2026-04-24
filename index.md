@@ -4,10 +4,14 @@ I build robots because I refuse to do something manually twice.
 Not your typical polymath ;)
 
 ---
+{% assign raw_projects = site.projects %}
 
-{% assign projects = site.projects | default: empty_array | sort: "date" | reverse %}
+{% if raw_projects %}
+  {% assign projects = raw_projects | sort: "date" | reverse %}
+{% else %}
+  {% assign projects = "" | split: "" %}
+{% endif %}
 
-{% if projects.size > 0 %}
 ## Projects
 
 {% for project in projects limit:3 %}
