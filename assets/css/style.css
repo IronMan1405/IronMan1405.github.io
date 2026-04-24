@@ -114,7 +114,7 @@ main {
 
 .katex-display .tag {
   margin-left: 1rem;
-  color: var(--subtle);
+  /* color: var(--subtle); */
   white-space: nowrap;
 }
 
@@ -151,16 +151,6 @@ p .katex {
 
   .katex-display {
     padding: 0.8rem;
-    padding-bottom: 0.6rem;
-  }
-
-  .eq {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .eq span {
-    align-self: flex-end;
   }
 }
 
