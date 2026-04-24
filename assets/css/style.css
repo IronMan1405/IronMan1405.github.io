@@ -92,8 +92,8 @@ main {
   border: 1px solid var(--border);
   border-radius: 12px;
 
-  /* overflow-x: auto;
-  overflow-y: hidden;
+  overflow-x: auto;
+  /* overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth; */
 
