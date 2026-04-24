@@ -127,10 +127,6 @@ main {
 p .katex {
   display: inline-block;
   max-width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  vertical-align: middle;
-  -webkit-overflow-scrolling: touch;
 }
 
 .katex {
