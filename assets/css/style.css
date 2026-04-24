@@ -95,26 +95,31 @@ main {
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 
   padding: 1rem;
   margin: 1.5em 0;
 }
 
 .katex-display .katex {
-  display: inline-block;
+  display: inline-flex;
+  align-items: baseline;
   min-width: max-content;
   white-space: nowrap;
 }
 
 .katex-display .katex-html {
-  display: inline-block;
+  display: inline-flex;
+  align-items: baseline;
   max-width: none;
   white-space: nowrap;
 }
 
 .katex-display .tag {
-  margin-left: 1rem;
+  position: static !important;
+  margin-left: 1.5rem;
   /* color: var(--subtle); */
+  flex-shrink: 0;
   white-space: nowrap;
 }
 
