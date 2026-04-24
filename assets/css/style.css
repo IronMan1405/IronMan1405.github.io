@@ -101,27 +101,19 @@ main {
   -webkit-overflow-scrolling: touch;
 }
 
-.katex-display > .katex {
-  white-space: nowrap;
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.katex-display .katex {
+  display: inline-block;
+  min-width: max-content;
 }
 
 .katex {
   font-size: 1em;
-}
-
-.eq {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-
-  flex-wrap: wrap;
-  margin: 1.5em 0;
-}
-
-.eq span {
-  color: var(--subtle);
-  font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {

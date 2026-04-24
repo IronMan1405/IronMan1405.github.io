@@ -95,10 +95,7 @@ $$
 \frac{1}{1-a^{4}} + \frac{1}{1-a^{8}} + \frac{1}{1-a^{12}} + \cdots
 $$
 
-Subtracting the series
-$
-\sum_{k=1}^{\infty}\frac{1}{1-a^{4k}}
-$
+Subtracting the series $\sum_{k=1}^{\infty}\frac{1}{1-a^{4k}}$
 from the right-hand side of (3), and aligning indices, we obtain:
 
 $$
@@ -120,7 +117,7 @@ $$
 =
 \sum_{k=1}^{\infty}\left(\frac{1}{1-a^{4k}}
 -
-\frac{1}{1-a^{4k-2}}\right) \newline
+\frac{1}{1-a^{4k-2}}\right) \\
 \implies
 \sum_{k=1}^{\infty}\frac{(-1)^{k+1}}{a^{2k}-1}
 =
