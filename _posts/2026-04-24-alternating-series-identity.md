@@ -120,10 +120,7 @@ $$
 =
 \sum_{k=1}^{\infty}\left(\frac{1}{1-a^{4k}}
 -
-\frac{1}{1-a^{4k-2}}\right)
-$$
-
-$$
+\frac{1}{1-a^{4k-2}}\right) \newline
 \implies
 \sum_{k=1}^{\infty}\frac{(-1)^{k+1}}{a^{2k}-1}
 =
