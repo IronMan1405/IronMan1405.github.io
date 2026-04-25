@@ -124,11 +124,10 @@ main {
   white-space: nowrap;
 }
 
-p .katex {
-  /* display: inline-block; */
-  /* max-width: 100%; */
-  white-space: nowrap;
-}
+/* p .katex {
+  display: inline-block;
+  max-width: 100%;
+} */
 
 .katex {
   font-size: 1em;
