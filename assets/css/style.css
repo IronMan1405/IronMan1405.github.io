@@ -92,15 +92,12 @@ main {
   border: 1px solid var(--border);
   border-radius: 12px;
 
-  display: flex;
-  align-items: center;
-  gap: 0;
   position: relative;
-
+  
+  display: block;
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
-  scrollbar-gutter: stable;
 
   padding: 1rem;
   margin: 1.5em 0;
@@ -109,7 +106,6 @@ main {
 
 .katex-display .katex {
   display: inline-block;
-  /* align-items: baseline; */
   min-width: max-content;
   white-space: nowrap;
   /* padding-right: 3.5rem; */
@@ -146,20 +142,9 @@ main {
     font-size: 1rem;
   }
 
-  /* .katex {
-    font-size: 0.95em;
-  } */
-
-  .katex-display > .katex{
+  /* .katex-display > .katex{
     display: inline-block;
     padding: 0.8rem;
-  }
-  /* .katex-display .tag {
-    display: inline-block;
-    margin-left: 1.5rem;
-    text-align: right;
-    white-space: nowrap;
-    margin-top: 0.3rem;
   } */
 }
 
@@ -169,12 +154,12 @@ main {
     padding: 12px;
   }
 
-  .katex {
+  /* .katex {
     font-size: 0.9em;
   }
 
   .katex-display {
     padding: 0.7rem;
     border-radius: 8px;
-  }
+  } */
 }
