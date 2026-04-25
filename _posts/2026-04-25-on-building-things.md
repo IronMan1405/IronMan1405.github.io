@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "On Building Things"
-date: 2026-04-25
+date: 2026-04-25 15:00
 ---
 
 I used to think building projects was about finishing them. <br>
