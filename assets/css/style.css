@@ -122,13 +122,6 @@ main {
   z-index: 2;
 }
 
-.katex-display::after {
-  content: "";
-  display: inline-block;
-  width: 3.5rem;
-  flex: 0 0 3.5rem;
-}
-
 @media (max-width: 768px) {
 
   .container {
