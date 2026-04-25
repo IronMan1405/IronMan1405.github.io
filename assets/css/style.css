@@ -108,12 +108,12 @@ main {
   white-space: nowrap;
 }
 
-.katex-display .katex-html {
-  /* display: inline-block; */
-  /* align-items: baseline; */
-  /* max-width: none; */
+/* .katex-display .katex-html {
+  display: inline-block;
+  align-items: baseline;
+  max-width: none;
   white-space: nowrap;
-}
+} */
 
 .katex-display .tag {
   /* display: inline-block; */
