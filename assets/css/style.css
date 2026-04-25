@@ -156,8 +156,10 @@ main {
     padding: 0.8rem;
   }
   .katex-display .tag {
-    display: block;
+    display: inline-block;
+    margin-left: 1.5rem;
     text-align: right;
+    white-space: nowrap;
     margin-top: 0.3rem;
   }
 }
