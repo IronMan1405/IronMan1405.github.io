@@ -92,20 +92,49 @@ main {
   border: 1px solid var(--border);
   border-radius: 12px;
 
+  position: relative;
+
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
 
   padding: 1rem;
-  margin: 1.5em 0;
+  /* margin: 1.5em 0; */
   white-space: nowrap;
 }
 
 .katex-display .katex {
-  display: block;
-  align-items: baseline;
+  display: inline-block;
+  /* align-items: baseline; */
   min-width: max-content;
   white-space: nowrap;
+}
+
+.katex-display .tag {
+  position: sticky;
+  right: 0;
+  background: var(--surface);
+  padding-left: 1rem;
+  margin-left: 1rem;
+  white-space: nowrap;
+}
+
+.katex-display::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 60px;
+  height: 100%;
+
+  background: linear-gradient(
+    to left,
+    var(--surface),
+    transparent
+  );
+
+  pointer-events: none;
 }
 
 @media (max-width: 768px) {
@@ -133,7 +162,7 @@ main {
   .katex-display .tag {
     display: inline-block;
     margin-left: 1.5rem;
-    text-align: right;
+    /* text-align: right; */
     white-space: nowrap;
     margin-top: 0.3rem;
   }
