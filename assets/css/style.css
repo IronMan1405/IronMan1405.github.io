@@ -101,21 +101,27 @@ main {
 
   padding: 1rem;
   margin: 1.5em 0;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .katex-display .katex {
-  display: inline-block;
-  width: max-content;
-  min-width: 100%;
+  /* display: inline-block; */
+  /* width: max-content; */
+  /* min-width: 100%; */
   white-space: nowrap;
-  padding-right: 2px;
+  /* padding-right: 2px; */
+}
+
+.katex-display .katex-html {
+  display: flex;
+  align-items: center;
 }
 
 .katex-display .tag {
   position: sticky;
   right: 0;
   background: var(--surface);
+  flex-shrink: 0;
   padding-left: 1rem;
   margin-left: 1rem;
   white-space: nowrap;
