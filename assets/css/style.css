@@ -131,7 +131,6 @@ main {
 
 .katex {
   font-size: 1em;
-  white-space: nowrap;
 }
 
 @media (max-width: 768px) {
