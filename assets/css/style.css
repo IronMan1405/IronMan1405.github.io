@@ -100,7 +100,6 @@ main {
   scrollbar-gutter: stable;
 
   padding: 1rem;
-  padding-right: 3.5rem;
   margin: 1.5em 0;
   white-space: nowrap;
 }
@@ -110,6 +109,7 @@ main {
   /* align-items: baseline; */
   min-width: max-content;
   white-space: nowrap;
+  padding-right: 3.5rem;
 }
 
 .katex-display .tag {
