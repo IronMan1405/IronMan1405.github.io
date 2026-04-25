@@ -104,30 +104,31 @@ main {
 .katex-display .katex {
   display: block;
   /* align-items: baseline; */
-  /* min-width: max-content; */
+  min-width: max-content;
   white-space: nowrap;
 }
 
 .katex-display .katex-html {
   /* display: inline-block; */
   /* align-items: baseline; */
-  max-width: none;
+  /* max-width: none; */
   white-space: nowrap;
 }
 
-/* .katex-display .tag {
-  display: inline-block;
-  position: static !important;
-  margin-left: 1.5rem;
-  color: var(--subtle);
-  flex-shrink: 0;
+.katex-display .tag {
+  /* display: inline-block; */
+  /* position: static !important; */
+  /* margin-left: 1.5rem; */
+  /* color: var(--subtle); */
+  /* flex-shrink: 0; */
   white-space: nowrap;
-} */
+}
 
-/* p .katex {
-  display: inline-block;
-  max-width: 100%;
-} */
+p .katex {
+  /* display: inline-block; */
+  /* max-width: 100%; */
+  white-space: nowrap;
+}
 
 .katex {
   font-size: 1em;
