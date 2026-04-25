@@ -106,9 +106,10 @@ main {
 
 .katex-display .katex {
   display: inline-block;
-  min-width: max-content;
+  width: max-content;
+  min-width: 100%;
   white-space: nowrap;
-  /* padding-right: 3.5rem; */
+  padding-right: 2px;
 }
 
 .katex-display .tag {
