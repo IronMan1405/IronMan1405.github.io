@@ -101,12 +101,12 @@ main {
   white-space: nowrap;
 }
 
-.katex-display .katex {
-  /* display: block; */
-  /* align-items: baseline; */
-  /* min-width: max-content; */
+/* .katex-display .katex {
+  display: block;
+  align-items: baseline;
+  min-width: max-content;
   white-space: nowrap;
-}
+} */
 
 /* .katex-display .katex-html {
   display: inline-block;
