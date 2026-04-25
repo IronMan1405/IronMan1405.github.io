@@ -114,7 +114,7 @@ main {
 
 .katex-display .katex-html {
   display: flex;
-  align-items: center;
+  align-items: right;
 }
 
 .katex-display .tag {
