@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "On Building Things"
-date: 2026-04-25 15:00:00
+date: 2026-04-25 09:00:00 # UTC when IST is 15:00:00
 ---
 
 I used to think building projects was about finishing them. <br>
