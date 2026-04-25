@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ page.title }}</title>
+    <title>About</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"/>
 
@@ -21,25 +21,34 @@
             });">
     </script>
 
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
 
     <header class="site-header">
         <div class="container">
-            <h1 class="site-title">{{ site.title }}</h1>
+            <h1 class="site-title">Dakshesh</h1>
             <p class="site-subtitle">Robotics | Embedded Systems | Engineering | Advanced Mathematics</p>
         </div>
         <nav class="nav">
-            {% for item in site.data.navigation %}
-                <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-            {% endfor %}
+            
+                <a href="/">Home</a>
+            
+                <a href="/projects/">Projects</a>
+            
+                <a href="/blog/">Blog</a>
+            
+                <a href="/about/">About</a>
+            
         </nav>
     </header>
 
     <main class="container">
-        {{ content }}
+        <h2 id="about-me">About Me</h2>
+
+<p>ECE student building robotics and intelligent systems.</p>
+
     </main>
 </body>
 </html>
