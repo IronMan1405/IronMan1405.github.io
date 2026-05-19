@@ -15,10 +15,10 @@ Not your typical polymath ;)
 ## Projects
 
 {% if projects.size > 0 %}
-    {% for project in projects limit:3 %}
-        ### [{{ project.title }}]({{ project.url }})
-        {{ project.date | date: "%b %Y" }}
-    {% endfor %}
+{% for project in projects limit:3 %}
+### [{{ project.title }}]({{ project.url }})
+{{ project.date | date: "%b %Y" }}
+{% endfor %}
 {% else %}
 *No projects yet. Coming soon.*
 {% endif %}

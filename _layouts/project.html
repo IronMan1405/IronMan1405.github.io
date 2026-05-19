@@ -1,0 +1,81 @@
+---
+layout: default
+---
+
+<article class="project">
+
+  <!-- Header -->
+  <header class="project-header">
+    <h1 class="project-title">{{ page.title }}</h1>
+
+    <p class="project-meta">
+      {{ page.date | date: "%B %d, %Y" }}
+
+      {% if page.status %}
+        • <span class="project-status">{{ page.status }}</span>
+      {% endif %}
+
+      {% if page.category %}
+        • <span class="project-category">{{ page.category }}</span>
+      {% endif %}
+    </p>
+  </header>
+
+
+  <!-- Hero Image -->
+  {% if page.image %}
+  <div class="project-hero">
+    <img src="{{ page.image }}" alt="{{ page.title }}">
+  </div>
+  {% endif %}
+
+
+  <!-- Quick Info -->
+  <section class="project-info">
+
+    {% if page.tech %}
+    <div class="project-box">
+      <h3>Tech Stack</h3>
+      <p>{{ page.tech }}</p>
+    </div>
+    {% endif %}
+
+    {% if page.duration %}
+    <div class="project-box">
+      <h3>Duration</h3>
+      <p>{{ page.duration }}</p>
+    </div>
+    {% endif %}
+
+    {% if page.difficulty %}
+    <div class="project-box">
+      <h3>Difficulty</h3>
+      <p>{{ page.difficulty }}</p>
+    </div>
+    {% endif %}
+
+  </section>
+
+
+  <!-- Main Content -->
+  <section class="project-content">
+    {{ content }}
+  </section>
+
+
+  <!-- Links -->
+  {% if page.github or page.demo %}
+  <section class="project-links">
+
+    {% if page.github %}
+      <a href="{{ page.github }}" target="_blank">GitHub</a>
+    {% endif %}
+
+    {% if page.demo %}
+      <a href="{{ page.demo }}" target="_blank">Demo</a>
+    {% endif %}
+
+  </section>
+  {% endif %}
+
+</article>
