@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Self Balancing Robot"
-date: 2026-05-02
+date: 2026-05-19
 
 status: Completed
 category: Robotics
