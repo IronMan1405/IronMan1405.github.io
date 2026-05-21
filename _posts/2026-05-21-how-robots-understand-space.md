@@ -32,7 +32,7 @@ Any frame can act as a reference system with respect to which we express the pos
 
 <div style="display: flex; justify-content: center; gap: 48px;">
     <figure style="margin: 0; width: 300px; text-align: center;">
-        <img src="/assets/images/CoordFrame1.jpg" style="width: 100%;">
+        <img src="/assets/images/CoordFrame1.png" style="width: 100%;">
         <figcaption>
             Source:
             <a href="https://roboticseabass.com/2024/06/30/how-do-robot-manipulators-move/">
@@ -41,7 +41,7 @@ Any frame can act as a reference system with respect to which we express the pos
         </figcaption>
     </figure>
     <figure style="margin: 0; width: 300px; text-align: center;">
-        <img src="/assets/images/CoordFrame2.jpg" style="width: 90%;">
+        <img src="/assets/images/CoordFrame2.png" style="width: 90%;">
         <figcaption>
             Source: John J. Craig, Introduction to Robotics: Mechanics and Control
         </figcaption>
@@ -204,7 +204,7 @@ $$
 
 <div style="display: flex; justify-content: center; gap: 48px;">
     <figure style="margin: 0; width: 600px; text-align: center;">
-        <img src="/assets/images/TranslationalMapping.jpg" style="width: 85%;">
+        <img src="/assets/images/TranslationalMapping.png" style="width: 85%;">
         <figcaption>
             Source: John J. Craig, Introduction to Robotics: Mechanics and Control
         </figcaption>
@@ -226,7 +226,7 @@ $$
 
 <div style="display: flex; justify-content: center; gap: 48px;">
     <figure style="margin: 0; width: 600px; text-align: center;">
-        <img src="/assets/images/GeneralTransform.jpg" style="width: 85%;">
+        <img src="/assets/images/GeneralTransform.png" style="width: 85%;">
         <figcaption>
             Source: John J. Craig, Introduction to Robotics: Mechanics and Control
         </figcaption>
