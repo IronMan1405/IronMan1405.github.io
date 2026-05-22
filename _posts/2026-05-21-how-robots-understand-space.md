@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How Robots Understand Space"
-date: 2026-05-20
+date: 2026-05-21
 ---
 
 ## Coordinate Frames, Rotation Matrices, and the Geometry of Robot Motion
