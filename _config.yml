@@ -15,3 +15,5 @@ collections:
   projects:
     output: true
     permalink: /projects/:name/
+
+# google_analytics: G-5D34JSNQTS
