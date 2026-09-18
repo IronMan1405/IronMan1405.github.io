@@ -276,3 +276,156 @@ main {
   letter-spacing: 0.06em;
   margin-bottom: 2rem;
 }
+
+
+/* LIBRARY */
+
+.library {
+  margin-top: 2rem;
+
+  font-family:
+  "SFMono-Regular",
+  "Cascadia Code",
+  "Roboto Mono",
+  "Courier New",
+  monospace;
+}
+
+.library-toolbar {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  padding-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.library-path {
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.library-prompt {
+  color: var(--accent);
+}
+
+.library-count {
+  color: var(--subtle);
+  font-size: 0.75rem;
+}
+
+.library-table {
+  width: 100%;
+}
+
+.library-row {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr) 70px;
+  gap: 0.5rem;
+
+  align-items: start;
+
+  min-height: 42px;
+  padding: 0.45rem 0.6rem;
+
+  box-sizing: border-box;
+}
+
+.library-header-row {
+  min-height: 30px;
+
+  color: var(--subtle);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.library-file {
+  color: var(--text);
+  text-decoration: none;
+
+  border-bottom: 1px solid rgba(57, 53, 82, 0.55);
+
+  transition:
+  background 0.15s ease,
+  color 0.15s ease;
+}
+
+.library-file:hover {
+  background: var(--surface);
+  color: var(--accent2);
+
+  text-decoration: none;
+}
+
+.library-icon {
+  color: var(--accent);
+  font-size: 1rem;
+  align-items: flex-start;
+  padding-top: 0.1rem;
+}
+
+.library-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.library-name {
+  min-width: 0;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.library-size {
+  color: var(--subtle);
+  font-size: 0.75rem;
+  padding-top: 0.15rem;
+}
+
+.library-title {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.library-meta {
+  display: block;
+
+  color: var(--subtle);
+  font-size: 0.7rem;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .library-row {
+    grid-template-columns: 28px minmax(0, 1fr) 45px;
+    gap: 0.35rem;
+    padding: 0 0.35rem;
+  }
+
+  .library-date {
+    display: none;
+  }
+
+  .library-size {
+    text-align: right;
+  }
+
+  .library-header-row {
+    grid-template-columns: 28px minmax(0, 1fr) 45px;
+  }
+
+  .library-toolbar {
+    margin-bottom: 0.3rem;
+  }
+}
