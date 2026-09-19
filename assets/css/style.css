@@ -406,6 +406,52 @@ main {
   white-space: nowrap;
 }
 
+.library-search {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  margin: 1rem 0;
+
+  padding: 0.55rem 0.7rem;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.library-search-icon {
+  color: var(--subtle);
+  font-size: 1rem;
+}
+
+#library-search-input {
+  width: 100%;
+
+  background: transparent;
+  border: none;
+  outline: none;
+
+  color: var(--text);
+
+  font-family:
+    "SFMono-Regular",
+    "Cascadia Code",
+    "Roboto Mono",
+    "Courier New",
+    monospace;
+
+  font-size: 0.85rem;
+}
+
+#library-search-input::placeholder {
+  color: var(--subtle);
+}
+
+#library-search-input:focus {
+  color: var(--accent2);
+}
+
 @media (max-width: 600px) {
   .library-row {
     grid-template-columns: 28px minmax(0, 1fr) 45px;

@@ -6,6 +6,16 @@ permalink: /library/
 
 <div class="library">
     <div class="library-toolbar">
+        <div class="library-search">
+            <span class="library-search-icon">⌕</span>
+            <input
+                type="search"
+                id="library-search-input"
+                placeholder="Search library..."
+                autocomplete="off"
+                aria-label="Search library"
+            >
+        </div>
         <div class="library-path">
             <span class="library-prompt">~/</span>library
         </div>
@@ -21,7 +31,15 @@ permalink: /library/
         </div>
         {% for book in site.data.books %}
         <a class="library-row library-file"
-           href="{{ book.file | relative_url }}">
+           href="{{ book.file | relative_url }}"
+           data-search="
+                {{ book.title }}
+                {{ book.author }}
+                {{ book.translator }}
+                {{ book.edition }}
+                {{ book.publisher }}
+                {{ book.year }}
+            ">
             <!-- <span class="library-icon">▱</span> -->
             <span class="library-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none"
@@ -58,3 +76,33 @@ permalink: /library/
         {% endfor %}
     </div>
 </div>
+
+
+<script>
+    const searchInput = document.getElementById("library-search-input");
+    const books = document.querySelectorAll(".library-file");
+    const count = document.querySelector(".library-count");
+
+    searchInput.addEventListener("input", function () {
+        const query = this.value.toLowerCase().trim();
+        let visible = 0;
+
+        books.forEach(book => {
+            const searchableText =
+                book.dataset.search.toLowerCase();
+
+            const matches = searchableText.includes(query);
+
+            book.style.display = matches ? "grid" : "none";
+
+            if (matches) {
+                visible++;
+            }
+        });
+
+        count.textContent =
+            query
+                ? `${visible} / ${books.length} items`
+                : `${books.length} items`;
+    });
+</script>
