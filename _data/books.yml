@@ -87,3 +87,9 @@
   edition: "Translated by Samuel B. Griffith"
   file: "/assets/books/artofwar.pdf"
   type: "PDF"
+
+- title: "Digital Design"
+  author: "M. Morris Mano and Michael D. Ciletti"
+  edition: "5th Edition"
+  file: "/assets/books/M.-Morris-Mano-Digital-Design-Prentice-Hall-1995.pdf"
+  type: "PDF"
